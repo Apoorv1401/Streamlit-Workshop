@@ -290,3 +290,50 @@ elif hobbyChoice == "Learning":
     st.write("I love Learning in my free time!")
 else:
     st.write("Please, select a hobby you like :)")
+
+# Select Box
+st.subheader("Select Box")
+
+selectBox = st.selectbox(
+    'Where are you from?',
+    ('Europe', 'America', 'Asia'))
+
+st.write('You are from:', selectBox)
+
+# Multiselect Box
+st.subheader("Multiselect Box")
+
+multiSelect = st.multiselect(
+    "What colors do you like?",
+    ["Blue", "Red", "Green", "Black", "White"],
+    ["Red"] # Default Selected
+)
+
+# Slider -> Realtime Data Change
+st.subheader("Slider")
+
+age = st.slider('How old are you?', 0, 130, 25) # 25 is default value selected automatically to be changed
+st.write(f"I am {age} years old!")
+
+# Time Range Slider
+st.subheader("Time Range Slider")
+
+from datetime import time
+appointment = st.slider(
+    "Schedule your appointment:",
+    value=(time(11, 30), time(12, 45)))
+
+st.write(f"Your appointment starts at {appointment[0]}, and ends at {appointment[1]}")
+
+# Text Input
+st.subheader("Text Input Field")
+
+textInput = st.text_input('What is your name?')
+if textInput:
+    st.text(f"Hello, {textInput}. Welcome to the system!")
+
+# Number Input
+st.subheader("Number Input")
+
+numberInput = st.number_input('Insert a number')
+st.write(f"You have chosen {numberInput}")
