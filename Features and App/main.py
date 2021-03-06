@@ -337,3 +337,11 @@ st.subheader("Number Input")
 
 numberInput = st.number_input('Insert a number')
 st.write(f"You have chosen {numberInput}")
+
+# "BGR" -> "RGB"
+st.subheader("")
+
+bgrImg = cv2.imread("images/globalaihublogo.jpg")
+
+
+st.image(bgrImg, use_column_width=True, channels="BGR")
