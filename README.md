@@ -58,7 +58,7 @@ Get into the according folder where the main.py is located in.
 streamlit run main.py
 ```
 
-### © By @woosal1337, @GlobalAIHub
+### © By <a href="https://github.com/woosal1337">@woosal1337</a>,  <a href="https://github.com/globalaihub">@GlobalAIHub
 
 ### License:
 MIT License
