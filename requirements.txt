@@ -1,6 +1,7 @@
 numpy
 streamlit
 sklearn
+sklearn.utils
 matplotlib
 pandas
 pydeck
