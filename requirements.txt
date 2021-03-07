@@ -1,0 +1,14 @@
+numpy
+streamlit
+sklearn
+matplotlib
+pandas
+pydeck
+Pillow
+opencv-python
+altair
+plotly
+bokeh
+graphviz
+datetime
+

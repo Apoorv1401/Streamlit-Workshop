@@ -1,3 +1,5 @@
+import io
+
 import streamlit as st
 
 # Adding a title -> <h1> Features and App Page </h1>
@@ -306,19 +308,20 @@ st.subheader("Multiselect Box")
 multiSelect = st.multiselect(
     "What colors do you like?",
     ["Blue", "Red", "Green", "Black", "White"],
-    ["Red"] # Default Selected
+    ["Red"]  # Default Selected
 )
 
 # Slider -> Realtime Data Change
 st.subheader("Slider")
 
-age = st.slider('How old are you?', 0, 130, 25) # 25 is default value selected automatically to be changed
+age = st.slider('How old are you?', 0, 130, 25)  # 25 is default value selected automatically to be changed
 st.write(f"I am {age} years old!")
 
 # Time Range Slider
 st.subheader("Time Range Slider")
 
 from datetime import time
+
 appointment = st.slider(
     "Schedule your appointment:",
     value=(time(11, 30), time(12, 45)))
@@ -339,9 +342,53 @@ numberInput = st.number_input('Insert a number')
 st.write(f"You have chosen {numberInput}")
 
 # "BGR" -> "RGB"
-st.subheader("")
+st.subheader("OpenCV Images")
 
 bgrImg = cv2.imread("images/globalaihublogo.jpg")
+# Default Read image with OpenCV
+st.image(bgrImg, use_column_width=True, caption="Default Read image with OpenCV")
+# Converted BGR image with OpenCV
+st.image(bgrImg, use_column_width=True, channels="BGR", caption="Converted BGR image with OpenCV")
 
+# Text Area -> MD (Markdown) Parser
+st.subheader("Text Area")
 
-st.image(bgrImg, use_column_width=True, channels="BGR")
+textArea = st.text_area("Text to analyze", """""")
+
+if textArea:
+    st.write('MarkDown Parser:', f"""{textArea}""")
+
+# File Uploader -> Preprocessing and visualizing files
+uploadedFile = st.file_uploader("Upload a file")
+
+# Default Docs require StringIO and cStringIO modules, which do not exist anymore. -> One file at a time
+
+st.subheader("Upload and read .csv file")
+
+if uploadedFile is not None:
+    dataframe = pd.read_csv(uploadedFile)
+    st.write(dataframe)
+
+# Multiple Upload and Showcase of .csv Files
+
+st.subheader("Multiple Upload and Showcase of .csv Files")
+
+multipleUploadedFiles = st.file_uploader("Choose CSV files", accept_multiple_files=True)
+
+if multipleUploadedFiles:
+    for uploaded_file in multipleUploadedFiles:
+        st.subheader(f"File: {uploaded_file.name}")
+        dataframe = pd.read_csv(uploaded_file)
+        st.write(dataframe)
+
+# Color Picker
+colorPick = st.color_picker('Pick A Color', '#00f900')
+st.write(f"Color is {colorPick}")
+
+# Killing the current process -> st.stop()
+yourName = st.text_input("Please enter your name")
+if not yourName:
+    st.warning("Please enter your name!")
+    st.stop()
+
+st.success(f"Welcome back, {yourName.capitalize()}!") # Not executed if name is not included
