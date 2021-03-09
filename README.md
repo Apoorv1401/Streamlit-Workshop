@@ -58,7 +58,16 @@ Get into the according folder where the main.py is located in.
 streamlit run main.py
 ```
 
-### © By <a href="https://github.com/woosal1337">@woosal1337</a>,  <a href="https://github.com/globalaihub">@GlobalAIHub
+### © By <a href="https://github.com/woosal1337">@woosal1337</a>,  <a href="https://github.com/globalaihub">@GlobalAIHub</a>
 
+## In collaboration with:
+<center>
+		  
+| Global AI Hub  | Teens in AI |
+| :-----------: | :-----------: |
+| <a href="https://globalaihub.com/"><img src="https://globalaihub.com/wp-content/uploads/2021/02/logo-1.png" /></a>  | <a href="https://www.teensinai.com/"><img width=30% src="https://lh3.googleusercontent.com/4o7ehYIqqy6HZBD4taNFGlYeMqfNyX4vGYMNXYUop-Pa8RHooxL0K2zKbUJU-bFFXQdnk95TSnRcuIwqaIXFUKA=h500" /></a>	  |
+
+</center>
+	
 ### License:
 MIT License
