@@ -65,7 +65,7 @@ streamlit run main.py
 		  
 | Global AI Hub  | Teens in AI |
 | :-----------: | :-----------: |
-| <a href="https://globalaihub.com/"><img src="https://globalaihub.com/wp-content/uploads/2021/02/logo-1.png" /></a>  | <a href="https://www.teensinai.com/"><img width=30% src="https://lh3.googleusercontent.com/4o7ehYIqqy6HZBD4taNFGlYeMqfNyX4vGYMNXYUop-Pa8RHooxL0K2zKbUJU-bFFXQdnk95TSnRcuIwqaIXFUKA=h500" /></a>	  |
+| <a href="https://globalaihub.com/"><img src="https://globalaihub.com/wp-content/uploads/2021/02/logo-1.png" /></a>  | <a href="https://www.teensinai.com/"><img width=40% src="https://lh3.googleusercontent.com/4o7ehYIqqy6HZBD4taNFGlYeMqfNyX4vGYMNXYUop-Pa8RHooxL0K2zKbUJU-bFFXQdnk95TSnRcuIwqaIXFUKA=h500" /></a>	  |
 
 </center>
 	
